@@ -26,6 +26,6 @@ const API_URL = 'https://api.jikan.moe/v4';
 
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
-    getAnimeData();
+    clearcontent();
   }
 });

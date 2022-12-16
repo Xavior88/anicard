@@ -19,13 +19,13 @@
   <body>
     <img src="img/logo.png" alt="AniCard" width="380" height="70">
     <form>
-      <input autocomplete="off" type="text" placeholder="Search an anime" id="anime-name" name="anime-name" enter="getAnimeData()">
+      <input autocomplete="off" type="text" placeholder="Search an anime" id="anime-name" name="anime-name">
       <script>
         var input = document.getElementById("anime-name");
         input.addEventListener("keypress", function(event) {
           if (event.key === "Enter") {
             event.preventDefault();
-            document.getElementById("myBtn").getAnimeData();
+            document.getElementById("myBtn").clearcontent();
           }
         });
         </script>
