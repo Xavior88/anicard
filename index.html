@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PEM3GH50WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PEM3GH50WM');
+</script>
+    <title>AniCard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">  </head>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <img src="img/logo.png" alt="AniCard" width="380" height="70">
+    <form>
+      <input autocomplete="off" type="text" placeholder="Search an anime" id="anime-name" name="anime-name" enter="getAnimeData()">
+      <script>
+        var input = document.getElementById("anime-name");
+        input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("myBtn").getAnimeData();
+          }
+        });
+        </script>
+        
+        <button type="button" onclick="getAnimeData()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 1024 1024" height="1.5em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+        <button type="button" id="yes" onclick="clearcontent()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.5em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 5L2 6.27l6.97 6.97L6.5 19h3l1.57-3.66L16.73 21 18 19.73 3.55 5.27 3.27 5zM6 5v.18L8.82 8h2.4l-.72 1.68 2.1 2.1L14.21 8H20V5H6z"></path></svg></button>
+  <script>
+        function clearcontent() 
+        {
+            document.getElementById("anime-data").innerHTML = "";
+        }
+    </script>
+      </form>
+    <div id="anime-data"></div>
+    <script src="js/script.js"></script>
+  </body>
+  <P></P>
+  <hr>
+  <text>Version 1.0.0 | <a href="history"> Release History and Upcoming Plans </a>|<a href="privacy-policy"> Privacy Policy </a> | <a href="terms-and-conditions">Terms and Conditions </a> | <a href="https://github.com/Kiriyako/anicard/">Source Code </a> </text>
+</html>
