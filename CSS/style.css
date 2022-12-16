@@ -68,3 +68,30 @@ a:link {
         border-bottom: 1px solid black;
 
     }
+
+    .year{
+        color: rgb(152, 152, 152);
+        border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    background-color: #1c1c1c;
+    font-family: inherit;
+    font-size: 100%;
+    width: 150px;
+    }
+
+    .season{
+        color: rgb(152, 152, 152);
+        border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    background-color: #1c1c1c;
+    font-family: inherit;
+    font-size: 100%;
+    width: 150px;
+    }
+    
