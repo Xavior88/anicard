@@ -9,7 +9,6 @@ const API_URL = 'https://api.jikan.moe/v4';
     const imageUrl = item.images;
     const aired = item.aired;
     const broadcast = item.broadcast;
-    const genres = item.genres[0];
     const animeDataDiv = document.createElement('div');
     animeDataDiv.innerHTML = `
           <p></p>
@@ -22,7 +21,7 @@ const API_URL = 'https://api.jikan.moe/v4';
             <b>Total Episodes:</b><text> ${anime.episodes}</text> <br>
             <b>Episode Duration:</b><text> ${anime.duration}</text> <br>
             <b>Status:</b><text> ${anime.status}</text> <br>
-            <b>Genre and Age Rating:</b><text> ${genres.name}, ${anime.rating}</text> <br>
+            <b>Age Rating:</b><text> ${anime.rating}</text> <br>
 
           `;
 
