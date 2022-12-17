@@ -20,11 +20,11 @@ input{
     border: none;
 outline: none;
 padding: 0.5em 1em;
-border-radius: 24px;
+border-radius: 30px;
 background: #7c7c7c2b;
 font-family: inherit;
 font-size: 120%;
-width: 500px;
+width: 450px;
 }
 
 .footer{
@@ -42,7 +42,7 @@ width: 500px;
     color: white;
   }
 
-button{
+.buttone{
 color: white;
 margin: 0.5em;
 border-radius: 50%;
@@ -65,7 +65,7 @@ a:link {
     }
 
     hr{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(255, 255, 255);
 
     }
 
@@ -95,3 +95,40 @@ a:link {
     width: 150px;
     }
     
+    .dropbtn {
+        background-color: rgb(11, 22, 34);
+        color: #acacac;
+        padding: 0px;
+        border: none;
+          font-size: 23px;
+      
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(11, 22, 34);
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 13px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+          color: white;
+      
+      }
+      
+      .dropdown-content a:hover {color: rgb(0, 168, 210);}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
