@@ -18,9 +18,9 @@ const API_URL = 'https://api.jikan.moe/v4';
             <b>Japanese Title:</b><text> ${anime.title_japanese}</text> <br>
             <b>Type and Source:</b><text> ${anime.type}, ${anime.source}</text> <br>
             <b>Synopsis:</b> <text>${anime.synopsis}</text><br>
-            <b>Airing Timings and Status:</b><text> ${broadcast.string},  ${aired.string}</text> <br>
+            <b>Airing Timings and Dates:</b><text> ${broadcast.string},  ${aired.string}</text> <br>
             <b>Total Episodes:</b><text> ${anime.episodes}</text> <br>
-            <b>Duration:</b><text> ${anime.duration}</text> <br>
+            <b>Episode Duration:</b><text> ${anime.duration}</text> <br>
             <b>Status:</b><text> ${anime.status}</text> <br>
             <b>Genre and Age Rating:</b><text> ${genres.name}, ${anime.rating}</text> <br>
 
