@@ -115,6 +115,7 @@ a:link {
         background-color: rgb(11, 22, 34);
         min-width: 150px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: #151F2E;
         z-index: 1;
       }
       
