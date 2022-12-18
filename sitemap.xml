@@ -9,22 +9,62 @@
 
 <url>
   <loc>https://kiriyako.github.io/anicard/</loc>
-  <lastmod>2022-12-16T06:05:38+00:00</lastmod>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://kiriyako.github.io/anicard/anime-search</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/manga</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/character-search</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/people-search</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/current</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/season-search</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/top</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiriyako.github.io/anicard/random</loc>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://kiriyako.github.io/anicard/history</loc>
-  <lastmod>2022-12-16T06:05:38+00:00</lastmod>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kiriyako.github.io/anicard/privacy-policy</loc>
-  <lastmod>2022-12-16T06:05:38+00:00</lastmod>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kiriyako.github.io/anicard/terms-and-conditions</loc>
-  <lastmod>2022-12-16T06:05:38+00:00</lastmod>
+  <lastmod>2022-12-18T07:06:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
