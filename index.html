@@ -22,7 +22,21 @@
       <a href="https://kiriyako.github.io/anicard/"><img src="img/logo.png" alt="AniCard" width="380" height="70" >  </a>
         <div class="footer">
     <form>
-      <h2> Hello! What do you want to do? </h2> 
+      <script>
+        var today = new Date();
+var hourNow = today.getHours();
+var greeting; 
+if (hourNow > 18) {
+  greeting = 'Good evening!';
+} else if (hourNow > 12) {
+  greeting = 'Good afternoon!';
+} else if (hourNow > 0) {
+  greeting = 'Good morning!';
+} else {
+  greeting = 'Welcome!';
+}
+document.write('<h3>' + greeting + " " + "What do you want to do?" + '</h3>');
+      </script>
       <h3>  <a href="https://kiriyako.github.io/anicard/"> Home </a> &nbsp; | &nbsp; <div class="dropdown">
         <button type='button' class="dropbtn">Browse</button>
         <div class="dropdown-content">
@@ -32,7 +46,7 @@
           <a href="people-search"> People </a>
           <a href="current">This Season</a>
         </div>
-      </div> &nbsp; |&nbsp;<a href="season-search"> Season Search </a> &nbsp;| &nbsp; <a href="top">  Top Anime </a>&nbsp; | &nbsp; <a href="airing-today"> Airing Today &nbsp;| &nbsp; <a href="random"> Random Anime  </a>   <p></p>          <div id="anime-data">
+      </div> &nbsp; |&nbsp;<a href="season-search"> Season Search </a> &nbsp;| &nbsp; <a href="top">  Top Anime </a>&nbsp; | &nbsp; <a href="airing-today"> Airing Today &nbsp;| &nbsp; <a href="anime-info"> Anime Info (Full) &nbsp;| &nbsp; <a href="random"> Random Anime  </a>   <p></p>          <div id="anime-data">
       
      <h3> A recommendation for you: </h3>
      <h4> Want something musical? This one is for you! </h4>
@@ -42,13 +56,14 @@
   <img height= 400 width = 280 src ="recommendations/img/bocchi.png"> <br>
   <br>
   <video width="500" height="300" autoplay controls>
-    <source src="https://v.animethemes.moe/BocchiTheRock-OP1.webm" type="video/mp4"> </video> <p></p>
+    <source src="https://v.animethemes.moe/BocchiTheRock-OP1.webm" autoplay="off" type="video/mp4"> </video> <p></p>
     <text> Just see how good the opening is!</text>
   <P></P>
 <hr>
   Yeah that's all. (POV: You suck at generating content) <p></p>
-  <text>Version 2.4.0 | <a href="history"> Release History and Upcoming Plans </a>|<a href="privacy-policy"> Privacy Policy </a> | <a href="terms-and-conditions">Terms and Conditions </a> | <a href="https://github.com/Kiriyako/anicard/">Source Code </a> </text>
+  <text>Version 2.5.0 | <a href="history"> Release History and Upcoming Plans </a>|<a href="privacy-policy"> Privacy Policy </a> | <a href="terms-and-conditions">Terms and Conditions </a> | <a href="https://github.com/Kiriyako/anicard/">Source Code  </a> </text>
 </div>
 </body>
+
   </html>
 
