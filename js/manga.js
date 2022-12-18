@@ -12,7 +12,8 @@ const API_URL = 'https://api.jikan.moe/v4';
     animeDataDiv.innerHTML = `
           <p></p>
             <img src ="${imageUrl.jpg.image_url}"><p></p>
-            <b>Title:</b> <text> ${manga.title}</text><br>
+             <text id="rcorners2"> ${manga.title}</text><br>
+             <p>
             <b>Japanese Title:</b><text> ${manga.title_japanese}</text> <br>
             <b>Synopsis:</b> <text>${manga.synopsis}</text><br>
             <b>Total Chapters:</b><text> ${manga.chapters}</text> <br>

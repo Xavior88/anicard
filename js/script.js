@@ -13,7 +13,8 @@ const API_URL = 'https://api.jikan.moe/v4';
     animeDataDiv.innerHTML = `
           <p></p>
             <img src ="${imageUrl.jpg.image_url}"><p></p>
-            <b>Title:</b> <text> ${anime.title}</text><br>
+            <text id="rcorners2"> ${anime.title}</text><br>
+            <p>
             <b>Japanese Title:</b><text> ${anime.title_japanese}</text> <br>
             <b>Type and Source:</b><text> ${anime.type}, ${anime.source}</text> <br>
             <b>Synopsis:</b> <text>${anime.synopsis}</text><br>
@@ -21,13 +22,14 @@ const API_URL = 'https://api.jikan.moe/v4';
             <b>Total Episodes:</b><text> ${anime.episodes}</text> <br>
             <b>Episode Duration:</b><text> ${anime.duration}</text> <br>
             <b>Status:</b><text> ${anime.status}</text> <br>
-            <b>Age Rating:</b><text> ${anime.rating}</text> <br>
-
+            <b>Age Rating:</b><text> ${anime.rating}</text>
+            <hr>
           `;
 
     document.getElementById('anime-data').appendChild(animeDataDiv);
     })
   });
+  
 }
 
 document.addEventListener('keydown', function(event) {
@@ -35,3 +37,4 @@ document.addEventListener('keydown', function(event) {
     clearcontent();
   }
 });
+

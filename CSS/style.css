@@ -114,8 +114,8 @@ a:link {
         position: absolute;
         background-color: rgb(11, 22, 34);
         min-width: 150px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         background-color: #151F2E;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }
       
@@ -133,3 +133,9 @@ a:link {
       
       .dropdown:hover .dropdown-content {display: block;}
       
+      #rcorners2 {
+        border-radius: 25px;
+        border: 2px solid #0088ff;
+        padding: 20px; 
+       
+      }

@@ -17,7 +17,7 @@ const API_URL = 'https://api.jikan.moe/v4';
             <b>Birthday:</b> <text>${people.birthday}</text><br>
             <b>Website URL:</b> <text>${people.website_url}</text><br>
             <b>About:</b> <text>${people.about}</text><br>
-
+            
           `;
 
     document.getElementById('anime-data').appendChild(animeDataDiv);
