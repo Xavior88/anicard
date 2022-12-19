@@ -140,3 +140,16 @@ a:link {
        
       }
 
+      .meh {
+        color: white;
+        font-size: 22px;
+border-radius: 0%;
+border: none;
+height: 50px;
+background: #7c7c7c2b;
+width: 400px;
+outline: none;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+      }
+
