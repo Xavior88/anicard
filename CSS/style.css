@@ -21,9 +21,9 @@ input{
 outline: none;
 padding: 0.5em 1em;
 border-radius: 30px;
-background: #7c7c7c2b;
+background: #151F2E;
 font-family: inherit;
-font-size: 120%;
+font-size: 100%;
 width: 450px;
 }
 
@@ -48,7 +48,7 @@ margin: 0.5em;
 border-radius: 50%;
 border: none;
 height: 46px;
-background: #7c7c7c2b;
+background: #151F2E;
 width: 46px;
 outline: none;
 cursor: pointer;
@@ -113,7 +113,7 @@ a:link {
         display: none;
         position: absolute;
         background-color: rgb(11, 22, 34);
-        min-width: 150px;
+        min-width: 140px;
         background-color: #151F2E;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -121,21 +121,21 @@ a:link {
       
       .dropdown-content a {
         color: black;
-        padding: 10px 16px;
+        padding: 10px 11px;
         text-decoration: none;
         display: block;
         font-size: 18px;
-          color: white;
+          color: #acacac;
       
       }
       
-      .dropdown-content a:hover {color: rgb(0, 168, 210);}
+      .dropdown-content a:hover {color: rgb(210, 0, 0);}
       
       .dropdown:hover .dropdown-content {display: block;}
       
       #rcorners2 {
         border-radius: 25px;
-        border: 2px solid #0088ff;
+        border: 2px solid #ffd500;
         padding: 20px; 
        
       }
