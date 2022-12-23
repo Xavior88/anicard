@@ -7,7 +7,6 @@ const API_URL = 'https://api.jikan.moe/v4';
        data.data.forEach(item => {
     const manga = item;
     const imageUrl = item.images;
-    const broadcast = item.broadcast;
     const animeDataDiv = document.createElement('div');
     animeDataDiv.innerHTML = `
           <p></p>
