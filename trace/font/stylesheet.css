@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'umeboshi';
+    src: url('umeboshi.woff2') format('woff2'),
+        url('umeboshi.woff') format('woff'),
+        url('umeboshi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
