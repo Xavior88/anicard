@@ -18,6 +18,24 @@
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
+        <!-- Add the button to the page -->
+        <button id="login-button">Login With AniList</button>
+
+        <!-- Add a placeholder element for the greeting and username -->
+        <div id="message"></div>
+    
+        <!-- Include the JavaScript code that handles the button click and initiates the OAuth flow -->
+        <script>
+          // Set up the OAuth client with the client ID and redirect URL
+          const clientId = 10384;
+          const redirectUrl = 'https://kiriyako.github.io/anicard';
+    
+          // Set up the button click event handler
+          document.getElementById('login-button').addEventListener('click', function() {
+            // Redirect the user to the AniList OAuth authorization page
+            window.location = `https://anilist.co/api/v2/oauth/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUrl}`;
+          });
+        </script>
     <div class="header">
       <a href="https://kiriyako.github.io/anicard/"><img src="img/logo.png" alt="AniCard" width="380" height="70" ></a>
         <div class="footer">
@@ -47,7 +65,7 @@ document.write('<h3>' + greeting + " " + "What do you want to do?" + '</h3>');
           <a href="current">This Season</a>
         </div>
       </div> &nbsp; |&nbsp;<a href="season-search"> Season Search </a> &nbsp;| &nbsp; <a href="top">  Top Anime </a>&nbsp; | &nbsp; <a href="airing-today"> Airing Today &nbsp;| &nbsp; <a href="anime-info"> Anime Info (Full) &nbsp;| &nbsp; <a href="random"> Random Anime  </a>   <p></p>          <div id="anime-data">
-      
+
      <h3> A recommendation for you: </h3>
      <h4> Want something musical? This one is for you! </h4>
      Bocchi The Rock! (ぼっち・ざ・ろっく) <BR>
