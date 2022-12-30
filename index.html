@@ -18,64 +18,6 @@
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
-    <h3>Login with AniList feature is under development and may not work.</h3> 
-    <!-- Add the "Login With AniList" button to the page -->
-    <button class="meh" id="login-button">Login With AniList</button> <p></p>
-
-    <!-- Add a placeholder element for the greeting and username -->
-    <div id="message"></div>
-
-    <!-- Include the JavaScript code that handles the button click and initiates the OAuth flow -->
-    <script>
-      // Set up the OAuth client with the client ID and redirect URL
-      const clientId = 10384;
-      const redirectUrl = 'https://kiriyako.github.io/anicard';
-
-      // Set up the button click event handler
-      document.getElementById('login-button').addEventListener('click', function() {
-        // Redirect the user to the AniList OAuth authorization page
-        window.location = `https://anilist.co/api/v2/oauth/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUrl}`;
-      });
-
-      // Check for the presence of an authorization code in the URL query string
-      const code = new URLSearchParams(window.location.search).get('code');
-      if (code) {
-        // Exchange the authorization code for an access token
-        fetch('https://anilist.co/api/v2/oauth/token', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            grant_type: 'authorization_code',
-            client_id: clientId,
-            client_secret: clientSecret,
-            redirect_uri: redirectUrl,
-            code: code,
-          }),
-        })
-          .then(response => response.json())
-          .then(result => {
-            // If the access token was successfully retrieved, use it to make an API call to get the user's profile data
-            if (result.access_token) {
-              fetch('https://anilist.co/api/v2/user', {
-                headers: {
-                  'Content-Type': 'application/json',
-                  Authorization: `Bearer ${result.access_token}`,
-                },
-              })
-                .then(response => response.json())
-                .then(user => {
-                  // Display the greeting and username
-                  document.getElementById('message').innerHTML = `Hello, ${user.name}!`;
-                });
-            } else {
-              // An error occurred, display an appropriate message
-              document.getElementById('message').innerHTML = `Error: ${result.error}`;
-            }
-          });
-      }
-    </script>
     <div class="header">
       <a href="https://kiriyako.github.io/anicard/"><img src="img/logo.png" alt="AniCard" width="380" height="70" ></a>
         <div class="footer">
